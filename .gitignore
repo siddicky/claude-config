@@ -19,6 +19,8 @@
 !README.md
 !LICENSE
 !.gitignore
+!.mcp.json
+!install.sh
 
 # Always ignore these, even in tracked directories
 .DS_Store
