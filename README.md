@@ -384,3 +384,53 @@ For targeted updates:
 ```
 Use your doc-sync skill to update documentation in src/validators/
 ```
+
+## LangChain Skills
+
+Integrated from [@siddicky/langchain-skills](https://github.com/siddicky/langchain-skills),
+these skills provide up-to-date patterns and working reference scripts for
+building, observing, and evaluating agents with LangChain, LangGraph,
+LangSmith, and Deep Agents.
+
+### Getting Started
+
+- **framework-selection** -- Framework comparison reference (LangChain vs
+  LangGraph vs Deep Agents). Invoke at the start of any agent project.
+- **langchain-dependencies** -- Package version and dependency management
+  reference for Python and TypeScript.
+
+### Deep Agents
+
+- **deep-agents-core** -- Agent architecture, harness setup, and SKILL.md format.
+- **deep-agents-memory** -- Memory, persistence, filesystem middleware.
+- **deep-agents-orchestration** -- Subagents, task planning, human-in-the-loop.
+
+### LangChain
+
+- **langchain-fundamentals** -- Chat models, agents, tools, and middleware.
+- **langchain-output** -- Structured output with Pydantic/Zod and HITL
+  middleware.
+- **langchain-rag** -- RAG pipeline (document loaders, embeddings, vector
+  stores).
+
+### LangGraph
+
+- **langgraph-fundamentals** -- StateGraph, nodes, edges, state reducers.
+- **langgraph-persistence** -- Checkpointers, thread_id, cross-thread memory.
+- **langgraph-execution** -- Workflows, interrupts, streaming modes.
+
+### LangSmith
+
+- **langsmith-trace** -- Query and export traces (includes helper scripts).
+- **langsmith-dataset** -- Generate evaluation datasets from traces (includes
+  helper scripts).
+- **langsmith-evaluator** -- Create custom evaluators (includes helper scripts).
+
+LangSmith skills include Python and TypeScript helper scripts for common
+operations. Set your API keys before using:
+
+```bash
+export LANGSMITH_API_KEY=<your-key>
+export OPENAI_API_KEY=<your-key>      # For OpenAI models
+export ANTHROPIC_API_KEY=<your-key>   # For Anthropic models
+```
